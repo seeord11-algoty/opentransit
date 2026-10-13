@@ -1,0 +1,18 @@
+{
+  "name": "opentransit-3d",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulaciones 3D de OpenTransit Colombia (bus y tren con tarifa por distancia)",
+  "scripts": {
+    "build:tren": "node build.mjs tren",
+    "build:bus": "node build.mjs bus",
+    "build": "node build.mjs tren && node build.mjs bus"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "playwright": "^1.63.0"
+  }
+}
